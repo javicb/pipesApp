@@ -31,6 +31,22 @@ export class NoComunesComponent implements OnInit {
     direccion: 'Andalucía, España'
   };
 
+  // Json
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Spiderman',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
