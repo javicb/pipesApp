@@ -29,4 +29,23 @@ export class NoComunesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cambiarPeronsa(): void {
+    if (this.nombre === 'Mamen') {
+      this.nombre = 'Javier';
+      this.genero = 'masculino';
+    } else {
+      this.nombre = 'Mamen';
+      this.genero = 'femenino';
+    }
+  }
+
+  borrarCliente(): void {
+    this.clientes.pop();
+  }
+
+  agregarCliente(): void {
+    // Da igual el nombre se añada, solo sirve para ver el uso del pipe
+    this.clientes.push('Javier');
+  }
+
 }
