@@ -7,15 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  nombre = 'javier cruz';
-  valor = 1000;
-  obj = {
-    nombre: 'javier'
-  };
-
-  mostrarNombre(): void {
-    console.log(this.nombre);
-    console.log(this.valor);
-    console.log(this.obj);
-  }
 }
