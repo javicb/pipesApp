@@ -7,9 +7,11 @@ import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
 
 // Cambiar locale de la app
-import localeEsHN from '@angular/common/locales/es-HN';
+import localeEs from '@angular/common/locales/es';
+import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
-registerLocaleData(localeEsHN);
+registerLocaleData(localeEs);
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
