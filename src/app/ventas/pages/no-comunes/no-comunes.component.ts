@@ -17,7 +17,7 @@ export class NoComunesComponent implements OnInit {
   };
 
   // i18nPlural
-  clientes = ['Maria', 'Pedro', 'Javier'];
+  clientes = ['Maria', 'Pedro', 'Javier', 'Juan'];
   clientesMap = {
     '=0': 'no tenemos ningún cliente esperando',
     '=1': 'tenemos un cliente esperando',
