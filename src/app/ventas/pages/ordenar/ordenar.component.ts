@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Color, Heroe } from '../../interfaces/heroe';
 
 @Component({
   selector: 'app-ordenar',
@@ -9,6 +10,28 @@ import { Component, OnInit } from '@angular/core';
 export class OrdenarComponent implements OnInit {
 
   enMayusculas = true;
+  heroes: Heroe = [
+    {
+      nombre: 'Superman',
+      vuela: true,
+      color: Color.azul
+    },
+    {
+      nombre: 'Spiderman',
+      vuela: false,
+      color: Color.rojo
+    },
+    {
+      nombre: 'Dr Strange',
+      vuela: true,
+      color: Color.negro
+    },
+    {
+      nombre: 'Linterna Verde',
+      vuela: true,
+      color: Color.verde
+    }
+  ];
 
   constructor() { }
 
