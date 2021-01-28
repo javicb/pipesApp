@@ -10,7 +10,7 @@ import { Color, Heroe } from '../../interfaces/heroe';
 export class OrdenarComponent implements OnInit {
 
   enMayusculas = true;
-  heroes: Heroe = [
+  heroes: Heroe[] = [
     {
       nombre: 'Superman',
       vuela: true,
