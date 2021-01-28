@@ -12,6 +12,8 @@ export class BasicosComponent {
   nombreUpper = 'UPPER';
   nombreCompleto = 'tItlE cAsE';
 
+  fecha = new Date();
+
   constructor() { }
 
 }
