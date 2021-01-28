@@ -10,6 +10,7 @@ import { Color, Heroe } from '../../interfaces/heroe';
 export class OrdenarComponent implements OnInit {
 
   enMayusculas = true;
+  orderBy = 'sin orden';
   heroes: Heroe[] = [
     {
       nombre: 'Superman',
@@ -40,6 +41,10 @@ export class OrdenarComponent implements OnInit {
 
   cambiarMayusculas(): void {
     this.enMayusculas = !this.enMayusculas;
+  }
+
+  cambiarOrden(value: string): void {
+    this.orderBy = value;
   }
 
 }

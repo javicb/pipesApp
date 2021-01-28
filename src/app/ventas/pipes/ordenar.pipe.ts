@@ -6,8 +6,18 @@ import { Heroe } from '../interfaces/heroe';
 })
 export class OrdenarPipe implements PipeTransform {
 
-  transform(value: Heroe[]): Heroe[] {
-    return value.sort((a, b) => (a.nombre > b.nombre) ? 1 : -1);
+  transform(value: Heroe[], orderBy: string = 'sin orden'): Heroe[] {
+
+    switch (orderBy) {
+      case 'nombre':
+        return value.sort((a, b) => (a.nombre > b.nombre) ? 1 : -1);
+      case 'vuela':
+        return value.sort((a, b) => (a.vuela > b.vuela) ? -1 : 1);
+      case 'color':
+        return value.sort((a, b) => (a.color > b.color) ? 1 : -1);
+      default:
+        return value;
+    }
   }
 
 }
