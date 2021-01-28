@@ -4,11 +4,22 @@
   <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
 </div>
 
-<div class="prime-grid">
+<div class="p-grid">
   <div class="p-col-4">
     <p-card header="Ventas Netas" subheader="del presente año">
       <em class="pi pi-euro"></em>
       {{ (ventasNetas + 1000000) | number:'1.2-2' }}
     </p-card>
   </div>
+  <div class="p-col-4">
+    <p-card header="Ventas Brutas" subheader="del presente año">
+      {{ (ventasNetas + 1000000) | currency:'CAD':'symbol-narrow':'1.0-4' }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="Ganancias porcentual" subheader="del presente año">
+      {{ porcentaje | percent:'2.2-2' }}
+    </p-card>
+  </div>
 </div>
+
